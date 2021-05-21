@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/DC-TEST/static/css/main.f7f8550f.chunk.css",
-    "main.js": "/DC-TEST/static/js/main.212a6ded.chunk.js",
-    "main.js.map": "/DC-TEST/static/js/main.212a6ded.chunk.js.map",
+    "main.css": "/DC-TEST/static/css/main.79ef29af.chunk.css",
+    "main.js": "/DC-TEST/static/js/main.80f5b80d.chunk.js",
+    "main.js.map": "/DC-TEST/static/js/main.80f5b80d.chunk.js.map",
     "runtime-main.js": "/DC-TEST/static/js/runtime-main.904c37f2.js",
     "runtime-main.js.map": "/DC-TEST/static/js/runtime-main.904c37f2.js.map",
     "static/js/2.5e417266.chunk.js": "/DC-TEST/static/js/2.5e417266.chunk.js",
     "static/js/2.5e417266.chunk.js.map": "/DC-TEST/static/js/2.5e417266.chunk.js.map",
     "index.html": "/DC-TEST/index.html",
-    "static/css/main.f7f8550f.chunk.css.map": "/DC-TEST/static/css/main.f7f8550f.chunk.css.map",
+    "static/css/main.79ef29af.chunk.css.map": "/DC-TEST/static/css/main.79ef29af.chunk.css.map",
     "static/js/2.5e417266.chunk.js.LICENSE.txt": "/DC-TEST/static/js/2.5e417266.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/DC-TEST/static/media/Chewy.31960123.ttf",
     "static/media/DazzleCrewLogo.a477ee5a.webp": "/DC-TEST/static/media/DazzleCrewLogo.a477ee5a.webp"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.904c37f2.js",
     "static/js/2.5e417266.chunk.js",
-    "static/css/main.f7f8550f.chunk.css",
-    "static/js/main.212a6ded.chunk.js"
+    "static/css/main.79ef29af.chunk.css",
+    "static/js/main.80f5b80d.chunk.js"
   ]
 }
