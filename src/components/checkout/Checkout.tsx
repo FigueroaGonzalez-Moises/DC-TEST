@@ -13,6 +13,7 @@ import { Redirect } from "react-router";
 import { checkAuth } from "../../CheckAuth";
 import { resetCart } from "../../redux/actions/userAction";
 import Paid from "./Paid";
+import "../../css/checkout.scss";
 
 function CardSection() {
     const CARD_ELEMENT_OPTIONS: any = {
@@ -464,7 +465,10 @@ const Checkout = props => {
     };
 
     return (
-        <div className="row" style={{ height: "100%", margin: "0" }}>
+        <div
+            className="row"
+            style={{ height: "100%", margin: "0", marginTop: "64px" }}
+        >
             <div className="col s12 m6">
                 <div className="container" style={{ marginTop: "50px" }}>
                     <div className="row">
@@ -1170,12 +1174,6 @@ const Checkout = props => {
                         <button
                             className="btn"
                             id="stripe-pay-btn"
-                            style={{
-                                marginTop: "16px",
-                                marginBottom: "64px",
-                                width: "380px",
-                                backgroundColor: "#0a0a0a",
-                            }}
                             onClick={() => {
                                 validateForm();
                             }}

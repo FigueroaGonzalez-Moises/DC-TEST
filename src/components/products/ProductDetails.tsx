@@ -131,8 +131,8 @@ const ProductDetails = () => {
     // }, 5000);
 
     return (
-        <div>
-            <h3 className="center-align">{product.name}</h3>
+        <div style={{ marginTop: "95px" }}>
+            <h2 className="center-align">{product.name}</h2>
             <h6 className="center-align">
                 {product.stock === 0 ? (
                     <span style={{ color: "#ff0000", fontWeight: "bold" }}>
@@ -196,11 +196,12 @@ const ProductDetails = () => {
                                                                 width: "12.5%",
                                                             }}
                                                             onClick={() => {
-                                                                var instance = M.Carousel.getInstance(
-                                                                    document.getElementById(
-                                                                        "carousel-1"
-                                                                    )!
-                                                                );
+                                                                var instance =
+                                                                    M.Carousel.getInstance(
+                                                                        document.getElementById(
+                                                                            "carousel-1"
+                                                                        )!
+                                                                    );
                                                                 instance.prev();
                                                             }}
                                                         ></span>
@@ -229,11 +230,12 @@ const ProductDetails = () => {
                                                                 width: "10%",
                                                             }}
                                                             onClick={() => {
-                                                                var instance = M.Carousel.getInstance(
-                                                                    document.getElementById(
-                                                                        "carousel-1"
-                                                                    )!
-                                                                );
+                                                                var instance =
+                                                                    M.Carousel.getInstance(
+                                                                        document.getElementById(
+                                                                            "carousel-1"
+                                                                        )!
+                                                                    );
                                                                 instance.next();
                                                             }}
                                                         ></span>
@@ -276,11 +278,12 @@ const ProductDetails = () => {
                                                                 width: "12.5%",
                                                             }}
                                                             onClick={() => {
-                                                                var instance = M.Carousel.getInstance(
-                                                                    document.getElementById(
-                                                                        "carousel-2"
-                                                                    )!
-                                                                );
+                                                                var instance =
+                                                                    M.Carousel.getInstance(
+                                                                        document.getElementById(
+                                                                            "carousel-2"
+                                                                        )!
+                                                                    );
                                                                 instance.prev();
                                                             }}
                                                         ></span>
@@ -307,11 +310,12 @@ const ProductDetails = () => {
                                                                 width: "10%",
                                                             }}
                                                             onClick={() => {
-                                                                var instance = M.Carousel.getInstance(
-                                                                    document.getElementById(
-                                                                        "carousel-2"
-                                                                    )!
-                                                                );
+                                                                var instance =
+                                                                    M.Carousel.getInstance(
+                                                                        document.getElementById(
+                                                                            "carousel-2"
+                                                                        )!
+                                                                    );
                                                                 instance.next();
                                                             }}
                                                         ></span>
@@ -380,7 +384,7 @@ const ProductDetails = () => {
                                         style={{
                                             display: "inline-block",
                                             height: "100%",
-                                            backgroundColor: "#0d0303",
+                                            backgroundColor: "#ff86f2",
                                         }}
                                     ></span>
                                 </div>
@@ -406,7 +410,7 @@ const ProductDetails = () => {
                                     style={{
                                         display: "inline-block",
                                         height: "100%",
-                                        backgroundColor: "#0d0303",
+                                        backgroundColor: "#ff86f2",
                                     }}
                                 ></span>
                             </div>
@@ -435,19 +439,11 @@ const ProductDetails = () => {
                                     </a>
                                     <button
                                         id="add-cart-btn"
-                                        className="btn disabled"
-                                        style={{
-                                            width: "100%",
-                                            backgroundColor: "#0a0a0a",
-                                            color: "#fff",
-                                            border: "none",
-                                            height: "45px",
-                                        }}
+                                        className="btn disabled chewy"
                                         onClick={() => {
                                             if (!!option) {
                                                 M.toast({
-                                                    html:
-                                                        "Product was added to cart",
+                                                    html: `Added to cart,&nbsp;<a href="#/my-cart">Click here to enter cart!</a>`,
                                                 });
                                                 let tmp = product;
                                                 tmp.option = option.name;
@@ -465,16 +461,10 @@ const ProductDetails = () => {
                             ) : (
                                 <button
                                     id="add-cart-btn"
-                                    style={{
-                                        width: "100%",
-                                        backgroundColor: "#0a0a0a",
-                                        color: "#fff",
-                                        border: "none",
-                                        height: "45px",
-                                    }}
+                                    className="btn chewy"
                                     onClick={() => {
                                         M.toast({
-                                            html: "Product was added to cart",
+                                            html: `Added to cart,&nbsp;<a href="#/my-cart">Click here to enter cart!</a>`,
                                         });
                                         dispatch(addProductToCart(product));
                                     }}
@@ -491,6 +481,9 @@ const ProductDetails = () => {
                                 return (
                                     <li
                                         key={i}
+                                        style={{
+                                            backgroundColor: "black",
+                                        }}
                                         onClick={() => {
                                             let percent = 100;
 
@@ -509,9 +502,9 @@ const ProductDetails = () => {
                                             });
 
                                             setOption({
-                                                name:
-                                                    odata.getProductsOptions[i]
-                                                        .name,
+                                                name: odata.getProductsOptions[
+                                                    i
+                                                ].name,
                                                 option_id:
                                                     odata.getProductsOptions[i]
                                                         .option_id,
@@ -529,9 +522,25 @@ const ProductDetails = () => {
                                         }}
                                     >
                                         {/* eslint-disable-next-line */}
-                                        <a>
-                                            {odata.getProductsOptions[i].name}
-                                        </a>
+                                        <span
+                                            className="center"
+                                            style={{
+                                                textTransform: "capitalize",
+                                            }}
+                                        >
+                                            <a
+                                                className="chewy bold"
+                                                style={{
+                                                    fontSize: "28px",
+                                                    color: "white",
+                                                }}
+                                            >
+                                                {
+                                                    odata.getProductsOptions[i]
+                                                        .name
+                                                }
+                                            </a>
+                                        </span>
                                     </li>
                                 );
                             })}

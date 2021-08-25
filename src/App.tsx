@@ -18,13 +18,11 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <div style={{ height: "100%", width: "100%" }}>
-                    <Navbar />
-                    <div className="contentWrapper">
-                        <Routes />
-                    </div>
-                    <Footer />
+                <Navbar />
+                <div className="contentWrapper">
+                    <Routes />
                 </div>
+                <Footer />
             </div>
         </Router>
     );

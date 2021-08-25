@@ -5,6 +5,7 @@ import {
 import "../../css/products.scss";
 import { useEffect } from "react";
 import anime from "animejs";
+import Carousel from "../Carousel";
 
 const GetSections = () => {
     const { data, loading } = useGetSectionsQuery();
@@ -58,134 +59,144 @@ const Products = () => {
     }
 
     return (
-        <div className="container" style={{ width: "80%" }}>
-            {!!sdata && sdata.getSections.length !== 0 ? (
-                <>
-                    <h1
-                        className="center-align"
-                        style={{
-                            marginTop: "60px",
-                            marginBottom: "60px",
-                            fontWeight: 600,
-                        }}
-                    >
-                        Sections
-                    </h1>
+        <>
+            <Carousel />
+            <div
+                className="watermark"
+                style={{ paddingLeft: "10%", paddingRight: "10%" }}
+            >
+                {!!sdata && sdata.getSections.length !== 0 ? (
+                    <>
+                        <h1
+                            className="center-align"
+                            style={{
+                                marginBottom: "60px",
+                                fontWeight: 600,
+                            }}
+                        >
+                            Sections
+                        </h1>
 
-                    <div className="sections-grid">
-                        {sdata.getSections.map((_val, i) => {
-                            let section = sdata.getSections[i];
-                            return (
-                                <div
-                                    className="card z-depth-0 black-text"
-                                    style={{
-                                        margin: "0px 8px 32px 8px",
-                                    }}
-                                    key={i}
-                                >
-                                    <a
-                                        className="black-text"
-                                        href={`#/view-section:${section.section_id}`}
+                        <div className="sections-grid">
+                            {sdata.getSections.map((_val, i) => {
+                                let section = sdata.getSections[i];
+                                return (
+                                    <div
+                                        className="card z-depth-0 "
+                                        style={{
+                                            margin: "0px 8px 32px 8px",
+                                        }}
+                                        key={i}
                                     >
-                                        <div className="container">
-                                            <div className="card-image">
-                                                <img
-                                                    src={section.thumbnail}
-                                                    alt={section.name}
-                                                />
+                                        <a
+                                            className=""
+                                            href={`#/view-section:${section.section_id}`}
+                                        >
+                                            <div className="container">
+                                                <div className="card-image">
+                                                    <img
+                                                        src={section.thumbnail}
+                                                        alt={section.name}
+                                                    />
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div className="card-content">
-                                            <span className="card-title">
-                                                <h5 className="center-align">
-                                                    {section.name}
-                                                </h5>
-                                            </span>
-                                            <span
-                                                style={{
-                                                    display: "flex",
-                                                    justifyContent: "center",
-                                                }}
-                                            ></span>
-                                        </div>
-                                    </a>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </>
-            ) : null}
-
-            {!!data ? (
-                <>
-                    <h1
-                        className="center-align"
-                        style={{
-                            marginTop: "60px",
-                            marginBottom: "60px",
-                            fontWeight: 600,
-                        }}
-                    >
-                        Products
-                    </h1>
-
-                    <div id="products-grid" className="products-grid hide">
-                        {data?.getProducts.map((_val, i) => {
-                            let product: any = data.getProducts[i];
-                            return (
-                                <div className="card z-depth-0 " key={i}>
-                                    <a
-                                        className="black-text"
-                                        href={`#/product-details:${product.product_id}`}
-                                    >
-                                        <div className="container">
-                                            <div className="card-image">
-                                                <img
-                                                    src={
-                                                        !product.images[0] ||
-                                                        !product.images[0]
-                                                            .img_url
-                                                            ? "https://materializecss.com/images/sample-1.jpg"
-                                                            : product.images[0]
-                                                                  .img_url
-                                                    }
-                                                    alt={product.name}
-                                                />
+                                            <div className="card-content">
+                                                <span className="card-title">
+                                                    <h5 className="center-align">
+                                                        {section.name}
+                                                    </h5>
+                                                </span>
+                                                <span
+                                                    style={{
+                                                        display: "flex",
+                                                        justifyContent:
+                                                            "center",
+                                                    }}
+                                                ></span>
                                             </div>
-                                        </div>
+                                        </a>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </>
+                ) : null}
 
-                                        <div className="card-content">
-                                            <span className="card-title">
-                                                <h5 className="center-align">
-                                                    {product.name}
-                                                </h5>
-                                            </span>
-                                            <span
-                                                style={{
-                                                    display: "flex",
-                                                    justifyContent: "center",
-                                                }}
-                                            >
-                                                <p
+                {!!data ? (
+                    <>
+                        <h1
+                            className="center-align"
+                            style={{
+                                marginBottom: "60px",
+                                fontWeight: 600,
+                            }}
+                        >
+                            Products
+                        </h1>
+
+                        <div id="products-grid" className="products-grid hide">
+                            {data?.getProducts.map((_val, i) => {
+                                let product: any = data.getProducts[i];
+                                return (
+                                    <div className="card z-depth-0 " key={i}>
+                                        <a
+                                            href={`#/product-details:${product.product_id}`}
+                                        >
+                                            <div className="container">
+                                                <div className="card-image">
+                                                    <img
+                                                        src={
+                                                            !product
+                                                                .images[0] ||
+                                                            !product.images[0]
+                                                                .img_url
+                                                                ? "https://materializecss.com/images/sample-1.jpg"
+                                                                : product
+                                                                      .images[0]
+                                                                      .img_url
+                                                        }
+                                                        alt={product.name}
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div className="card-content">
+                                                <span className="card-title">
+                                                    <h5 className="center-align product-name">
+                                                        {product.name}
+                                                    </h5>
+                                                </span>
+                                                <span
                                                     className="product-price"
-                                                    style={{ fontSize: "16px" }}
+                                                    style={{
+                                                        display: "flex",
+                                                        justifyContent:
+                                                            "center",
+                                                    }}
                                                 >
-                                                    $
-                                                    {Number(
-                                                        product.price / 100
-                                                    ).toFixed(2)}
-                                                </p>
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </>
-            ) : null}
-        </div>
+                                                    <p
+                                                        className="product-price"
+                                                        style={{
+                                                            fontSize: "16px",
+                                                        }}
+                                                    >
+                                                        $
+                                                        {Number(
+                                                            product.price / 100
+                                                        ).toFixed(2)}
+                                                    </p>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </>
+                ) : null}
+            </div>
+        </>
     );
 };
 

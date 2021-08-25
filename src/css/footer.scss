@@ -10,29 +10,32 @@
     }
 }
 
-footer {
-    @font-face {
-        font-family: SBU;
-        src: url("SBU.ttf");
-    }
-
-    .footer-logo {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 4.5% 0 4.5% 0;
-        justify-content: space-between;
-        h1 {
-            font-family: SBU;
-            color: white;
-            margin: 0;
-        }
-    }
+#social-link {
+    color: black;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
 }
 
-#social-link {
-    color: #fff;
-    &:hover {
-        color: #980000;
+.footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #f2f2f2;
+}
+
+.footer-copyright-text {
+    @font-face {
+        font-family: chewy;
+        src: url("Chewy.ttf");
     }
+    font-family: chewy;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 26.5px;
+    font-weight: 550;
 }

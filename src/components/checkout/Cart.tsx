@@ -108,7 +108,7 @@ const Cart = () => {
 
     if (!products || products.length === 0) {
         return (
-            <div style={{ minHeight: "80vh" }}>
+            <div style={{ minHeight: "80vh", marginTop: 90 }}>
                 <h3 className="center-align">Your Shopping Cart Is Empty!</h3>
                 <a href="#/products">
                     <h6
@@ -186,30 +186,24 @@ const Cart = () => {
     }
 
     return (
-        <div style={{ minHeight: "80vh" }}>
-            <>
+        <div style={{ minHeight: "80vh", marginTop: 65 }}>
+            <div
+                className="container"
+                style={{ backgroundColor: "white", minHeight: "100vh" }}
+            >
                 <h3 className="center-align" style={{ fontWeight: "bold" }}>
-                    Cart
+                    Subtotal
                 </h3>
-                <h6 className="center-align" style={{ fontWeight: 600 }}>
-                    Subtotal(${Number(total / 100).toFixed(2)})
-                </h6>
-
-                <div className="row container" style={{ marginTop: 20 }}>
-                    <div
-                        style={{
-                            width: "100%",
-                            borderBottom: " 4px solid #980000",
-                        }}
-                    ></div>
-                </div>
+                <h5 className="center-align" style={{ fontWeight: 600 }}>
+                    ${Number(total / 100).toFixed(2)}
+                </h5>
 
                 {products.map((_val, i) => {
                     return (
                         <div
                             id={`product-${i}`}
                             key={i}
-                            className={`product-${i} product row container`}
+                            className={`product-${i} product row`}
                         >
                             <div className={` col s12 m4 l4`}>
                                 <div className="centered">
@@ -450,7 +444,7 @@ const Cart = () => {
                         checkout
                     </a>
                 </div>
-            </>
+            </div>
         </div>
     );
 };

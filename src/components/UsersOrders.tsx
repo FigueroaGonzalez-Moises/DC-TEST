@@ -165,6 +165,7 @@ const UsersOrders = () => {
                             style={{
                                 display: "flex",
                                 justifyContent: "center",
+                                marginTop: "64px",
                             }}
                         >
                             <h3>Your Purchases</h3>
@@ -201,13 +202,12 @@ const UsersOrders = () => {
                                                 id={`card-header-${i}`}
                                                 style={{
                                                     borderLeft:
-                                                        "5px solid #ff0000",
+                                                        "5px solid #9549c1",
                                                     paddingTop: "13px",
                                                     paddingBottom: "13px",
                                                     paddingRight: "25px",
                                                     paddingLeft: "20px",
                                                     margin: "0px",
-                                                    zIndex: 4,
                                                     position: "relative",
                                                 }}
                                             >
@@ -470,7 +470,7 @@ const UsersOrders = () => {
                                                 className="card-body"
                                                 style={{
                                                     backgroundColor: "white",
-                                                    zIndex: 2,
+                                                    zIndex: 0,
                                                     position: "relative",
                                                 }}
                                             >

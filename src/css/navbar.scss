@@ -1,4 +1,72 @@
-#nav {
+@font-face {
+    font-family: chewy;
+    src: url("Chewy.ttf");
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 997;
+    width: 100%;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+#mobile-sidenav {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    margin-top: 56px;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out !important;
+    z-index: 2;
+
+    ul {
+        margin-top: 32px;
+        li a {
+            border-color: white;
+            color: #000;
+            font-size: 30px;
+            font-weight: 550;
+            margin-left: 32px;
+        }
+    }
+}
+
+#menu {
+    color: #d0629f;
+    position: relative;
+    z-index: 4;
+}
+
+#close-icon {
+    color: #d0629f;
+    position: relative;
+    z-index: 4;
+}
+
+#cart {
+    color: #d0629f;
+    position: relative;
+    z-index: 4;
+}
+.nav-wrapper {
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    margin-bottom: -64px;
+}
+
+nav ul {
+    font-family: chewy;
     li {
         height: 64px;
         &:hover {
@@ -8,57 +76,88 @@
             }
         }
 
-        &:after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #980000;
-            transition: width 0.3s;
-        }
+        // &:after {
+        //     content: "";
+        //     display: block;
+        //     width: 0;
+        //     height: 2px;
+        //     background: white;
+        //     transition: width 0.3s;
+        // }
 
         a {
-            color: #fff;
+            color: black;
             font-weight: 400;
+            color: #ff4081;
             font-size: 2rem;
             padding: 0px 10px 0px 10px;
             margin-bottom: -2px;
             &:hover {
+                color: #ff4081;
                 background-color: transparent;
             }
         }
     }
 }
 
-.letter {
-    display: inline-block;
+.nav-scrolled {
+    background: black;
+    ul li a {
+        &:hover {
+            color: white;
+        }
+    }
+}
+.nav-default {
+    background: none !important;
+}
+
+.bg-img {
+    // height: calc(100vh - 64px) !important;
+    height: calc(100vh) !important;
+    width: 100%;
+}
+// #9e7bff
+// #ff86f2
+.carousel-item {
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
+    img {
+        min-width: 100vw !important;
+        min-height: 100vh !important;
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+    }
 }
 
 .announcement {
     display: none;
 }
 
-@font-face {
-    font-family: SBU;
-    src: url("SBU.ttf");
-}
-
-nav .brand-logo {
-    img {
-        width: 250px;
-        height: 64px;
+nav .blogo {
+    position: relative;
+    z-index: 3;
+    @font-face {
+        font-family: chewy;
+        src: url("Chewy.ttf");
     }
-
-    font-family: SBU;
+    font-family: chewy;
+    img {
+        margin: -75px -25px -95px -25px;
+    }
+    margin-left: 75px;
     font-size: 2.5rem !important;
-    margin-left: 5%;
 }
 
 a:active,
 a:focus {
     outline: 0;
     border: none;
-    -moz-outline-style: none;
 }
 
 #nav {
@@ -82,12 +181,25 @@ a:focus {
 }
 
 @media only screen and (max-width: 1249px) {
-    nav .brand-logo {
+    #nav {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-default {
+        background: black !important;
+    }
+
+    nav .blogo {
         margin-left: 0px;
-        left: 50%;
-        font-size: 2.1rem !important;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
+        img {
+            margin: -65px -25px -85px -25px;
+            width: 350px;
+        }
     }
 
     .sidenav-trigger {
@@ -108,12 +220,21 @@ a:focus {
 }
 
 @media only screen and (max-width: 600px) {
-    nav .brand-logo {
-        font-size: 1.75rem !important;
+    .bg-img {
+        // height: calc(100vh - 56px) !important;
+        width: 100%;
+    }
 
-        img {
-            width: 220px;
-            height: 56px;
-        }
+    .carousel-item {
+        width: 120% !important;
+    }
+
+    .contentWrapper {
+        margin-top: 56px !important;
+        min-height: 95vh;
+    }
+
+    #social-link {
+        display: none !important;
     }
 }

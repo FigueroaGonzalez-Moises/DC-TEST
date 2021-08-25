@@ -1,7 +1,12 @@
 // import { useState } from "react";
 // import URI from "../URI";
 import "../css/contact.scss";
-import { FaInstagram, FaEnvelope } from "react-icons/fa";
+import {
+    FaInstagram,
+    FaEnvelope,
+    FaTwitter,
+    FaFacebookF,
+} from "react-icons/fa";
 // import { useGetCurrUserQuery } from "../generated/graphql";
 // import axios from "axios";
 
@@ -70,40 +75,25 @@ const Contact = () => {
                     marginBottom: "10px",
                 }}
             >
-                <span>
-                    <a
-                        href="mailto:cantrelatejp@gmail.com"
-                        style={{ width: "300px" }}
-                    >
-                        <h6 className="bold">
-                            <FaEnvelope
-                                style={{ marginRight: "5px", fontSize: "20px" }}
-                                className="left black-text"
-                            />
-                            Cantrelatejp@gmail.com
-                        </h6>
-                    </a>
-                </span>
-            </div>
-
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginBottom: "10px",
-                }}
-            >
-                <span>
-                    <a href="https://www.instagram.com/cantrelate.jp/">
-                        <h6 className="bold">
-                            <FaInstagram
-                                style={{ marginRight: "5px", fontSize: "20px" }}
-                                className="left black-text"
-                            />
-                            @CantRelate.jp
-                        </h6>
-                    </a>
-                </span>
+                <div className="div">
+                    <span>
+                        <a
+                            href="mailto:info.dazzlecrew@gmail.com"
+                            style={{ width: "300px" }}
+                        >
+                            <h6 className="bold">
+                                <FaEnvelope
+                                    style={{
+                                        marginRight: "5px",
+                                        fontSize: "20px",
+                                    }}
+                                    className="left black-text"
+                                />
+                                info.dazzlecrew@gmail.com
+                            </h6>
+                        </a>
+                    </span>
+                </div>
             </div>
 
             {/* <div style={{ display: "flex", justifyContent: "center" }}>

@@ -2,7 +2,7 @@
   "name": "front-end",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://figueroagonzalez-moises.github.io/cantrelate",
+  "homepage": "https://figueroagonzalez-moises.github.io/DC-TEST",
   "dependencies": {
     "@stripe/react-stripe-js": "^1.2.2",
     "@stripe/stripe-js": "^1.12.1",

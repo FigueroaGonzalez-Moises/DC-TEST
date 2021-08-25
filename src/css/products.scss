@@ -7,7 +7,40 @@
     row-gap: 32px;
     column-gap: 32px;
 
-    margin-bottom: 10vh;
+    padding-bottom: 10vh;
+
+    .card {
+        background-color: transparent;
+        &:hover {
+            a .card-content span {
+                h5 {
+                    color: #f7299a !important;
+                }
+            }
+        }
+    }
+}
+
+.product-name {
+    font-weight: 650;
+    color: black;
+}
+
+#add-cart-btn {
+    width: 100%;
+    background-color: #e33795;
+    color: white;
+    border: none;
+    height: "45px";
+    font-size: 19px;
+
+    &:hover {
+        background-color: #9549c1;
+    }
+}
+.product-price {
+    color: black;
+    // color: #d0629f;
 }
 
 .select {
