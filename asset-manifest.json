@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DC-TEST/static/css/main.074fc368.chunk.css",
+    "main.css": "/DC-TEST/static/css/main.8ada652c.chunk.css",
     "main.js": "/DC-TEST/static/js/main.f06bcfb4.chunk.js",
     "main.js.map": "/DC-TEST/static/js/main.f06bcfb4.chunk.js.map",
     "runtime-main.js": "/DC-TEST/static/js/runtime-main.1cbc316d.js",
@@ -8,7 +8,7 @@
     "static/js/2.34b01e43.chunk.js": "/DC-TEST/static/js/2.34b01e43.chunk.js",
     "static/js/2.34b01e43.chunk.js.map": "/DC-TEST/static/js/2.34b01e43.chunk.js.map",
     "index.html": "/DC-TEST/index.html",
-    "static/css/main.074fc368.chunk.css.map": "/DC-TEST/static/css/main.074fc368.chunk.css.map",
+    "static/css/main.8ada652c.chunk.css.map": "/DC-TEST/static/css/main.8ada652c.chunk.css.map",
     "static/js/2.34b01e43.chunk.js.LICENSE.txt": "/DC-TEST/static/js/2.34b01e43.chunk.js.LICENSE.txt",
     "static/media/products.scss": "/DC-TEST/static/media/Background-small.9f00df9c.png",
     "static/media/DazzleCrewLogo.ca956b7b.png": "/DC-TEST/static/media/DazzleCrewLogo.ca956b7b.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.1cbc316d.js",
     "static/js/2.34b01e43.chunk.js",
-    "static/css/main.074fc368.chunk.css",
+    "static/css/main.8ada652c.chunk.css",
     "static/js/main.f06bcfb4.chunk.js"
   ]
 }
