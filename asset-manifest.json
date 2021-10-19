@@ -3,8 +3,8 @@
     "main.css": "/DC-TEST/static/css/main.1f6db3af.chunk.css",
     "main.js": "/DC-TEST/static/js/main.3bc72b32.chunk.js",
     "main.js.map": "/DC-TEST/static/js/main.3bc72b32.chunk.js.map",
-    "runtime-main.js": "/DC-TEST/static/js/runtime-main.1aaca33c.js",
-    "runtime-main.js.map": "/DC-TEST/static/js/runtime-main.1aaca33c.js.map",
+    "runtime-main.js": "/DC-TEST/static/js/runtime-main.6e0a7bb2.js",
+    "runtime-main.js.map": "/DC-TEST/static/js/runtime-main.6e0a7bb2.js.map",
     "static/js/2.fc0a8ef0.chunk.js": "/DC-TEST/static/js/2.fc0a8ef0.chunk.js",
     "static/js/2.fc0a8ef0.chunk.js.map": "/DC-TEST/static/js/2.fc0a8ef0.chunk.js.map",
     "static/css/3.37a08e82.chunk.css": "/DC-TEST/static/css/3.37a08e82.chunk.css",
@@ -20,8 +20,8 @@
     "static/js/6.a07b9483.chunk.js": "/DC-TEST/static/js/6.a07b9483.chunk.js",
     "static/js/6.a07b9483.chunk.js.map": "/DC-TEST/static/js/6.a07b9483.chunk.js.map",
     "static/css/7.d2b799da.chunk.css": "/DC-TEST/static/css/7.d2b799da.chunk.css",
-    "static/js/7.a97e5b8d.chunk.js": "/DC-TEST/static/js/7.a97e5b8d.chunk.js",
-    "static/js/7.a97e5b8d.chunk.js.map": "/DC-TEST/static/js/7.a97e5b8d.chunk.js.map",
+    "static/js/7.779b0dfc.chunk.js": "/DC-TEST/static/js/7.779b0dfc.chunk.js",
+    "static/js/7.779b0dfc.chunk.js.map": "/DC-TEST/static/js/7.779b0dfc.chunk.js.map",
     "static/js/8.1b31a6e4.chunk.js": "/DC-TEST/static/js/8.1b31a6e4.chunk.js",
     "static/js/8.1b31a6e4.chunk.js.map": "/DC-TEST/static/js/8.1b31a6e4.chunk.js.map",
     "index.html": "/DC-TEST/index.html",
@@ -37,7 +37,7 @@
     "static/media/navbar.scss": "/DC-TEST/static/media/ink.d008c10c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1aaca33c.js",
+    "static/js/runtime-main.6e0a7bb2.js",
     "static/js/2.fc0a8ef0.chunk.js",
     "static/css/main.1f6db3af.chunk.css",
     "static/js/main.3bc72b32.chunk.js"
